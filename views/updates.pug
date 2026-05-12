@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+
+  body
+    header
+      h1 Add a New Record
+      a(href="/") ← Return to the homepage
+
+    main
+      form(action="/update-cobj" method="POST").form-card
+
+        .form-group
+          label(for="name") Name *
+          input(
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Fluffy"
+            required
+          )
+
+        .form-group
+          label(for="species") Species
+          input(
+            type="text"
+            id="species"
+            name="species"
+            placeholder="e.g. Cat"
+          )
+
+        .form-group
+          label(for="age") Age
+          input(
+            type="number"
+            id="age"
+            name="age"
+            placeholder="e.g. 3"
+            min="0"
+          )
+
+        button(type="submit").btn Submit
