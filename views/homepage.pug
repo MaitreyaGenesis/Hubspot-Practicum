@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+
+  body
+    header
+      h1 My Custom Objects (Pets)
+      a(href="/update-cobj").btn Add to this table
+
+    main
+      if records && records.length > 0
+        table
+          thead
+            tr
+              th ID
+              th Name
+              th Species
+              th Age
+          tbody
+            each record in records
+              tr
+                td= record.id
+                td= record.properties.name || '—'
+                td= record.properties.species || '—'
+                td= record.properties.age || '—'
+      else
+        p No records found. 
+          a(href="/update-cobj") Add the first one!
