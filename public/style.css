@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: #ff7a59;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #ff7a59;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ff7a59;
+  color: white;
+  border-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+thead {
+  background-color: #ff7a59;
+  color: white;
+}
+
+thead th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.15s;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #fff4f1;
+}
+
+tbody td {
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+}
+
+.form-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff7a59;
+}
+
+.form-card .btn {
+  background-color: #ff7a59;
+  color: white;
+  border-color: #ff7a59;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.form-card .btn:hover {
+  background-color: #e8614a;
+  border-color: #e8614a;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+p a {
+  color: #ff7a59;
+  font-weight: 600;
+}
